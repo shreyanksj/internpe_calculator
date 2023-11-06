@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <video autoplay loop muted plays-inline class="background-video">
+    <source
+      src="https://media.istockphoto.com/id/166538853/video/flying-through-mathematic-symbols-and-calculations.mp4?s=mp4-640x640-is&k=20&c=NYp7t33_VsAQ8apQRSEKkqiLbJ021Kd_iFOFStkNHoE="
+      type="video/mp4">
+
+  </video>
+  <div class="calculator">
+    <input type="text" id="display" readonly placeholder="0">
+    <div class="buttons">
+
+      <button onclick="appendToDisplay('1')">1</button>
+      <button onclick="appendToDisplay('2')">2</button>
+      <button onclick="appendToDisplay('3')">3</button>
+      <button onclick="clearDisplay()" class="blue">C</button>
+      <button onclick="appendToDisplay('4')">4</button>
+      <button onclick="appendToDisplay('5')">5</button>
+      <button onclick="appendToDisplay('6')">6</button>
+      <button onclick="deleteLastCharacter()" class="blue">DEL</button>
+      <button onclick="appendToDisplay('7')">7</button>
+      <button onclick="appendToDisplay('8')">8</button>
+      <button onclick="appendToDisplay('9')">9</button>
+      <button onclick="appendToDisplay('+')" class="orange">+</button>
+      <button onclick="appendToDisplay('0')">0</button>
+      <button onclick="appendToDisplay('00')">00</button>
+      <button onclick="appendToDisplay('.')">.</button>
+      <button onclick="appendToDisplay('-')" class="orange">-</button>
+      <button onclick="appendToDisplay('*')" class="orange">*</button>
+      <button onclick="appendToDisplay('%')" class="orange">%</button>
+      <button onclick="appendToDisplay('/')" class="orange">/</button>
+
+      <button onclick="calculate()" class="equal">=</button>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
